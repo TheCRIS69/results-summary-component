@@ -10,6 +10,11 @@
     --clr-primary-Green-Teal: hsl(166, 100%, 37%);
     --clr-primary-Cobalt-Blue: hsl(234, 85%, 45%);
 
+    --clr-primary-transparent-Light-Red: hsla(0, 100%, 67%, 0.1);
+    --clr-primary-transparent-Orangey-Yellow: hsla(39, 100%, 56%, 0.1);
+    --clr-primary-transparent-Green-Teal: hsla(166, 100%, 37%, 0.1);
+    --clr-primary-transparent-Cobalt-Blue: hsla(234, 85%, 45%, 0.1);
+
     /* BACKGROUND */ 
     --clr-gradient-Light-Slate-Blue: hsl(252, 100%, 67%); 
     --clr-gradient-Light-Royal-Blue: hsl(241, 81%, 54%);
@@ -21,6 +26,7 @@
     /* OTHERS */
     --clr-neutral-white: hsl(0, 0%, 100%);
     --clr-neutral-Pale-Blue: hsl(221, 100%, 96%);
+    --clr-neutral-Light-Gray: rgb(172, 172, 172);
     --clr-neutral-Light-Lavender: hsl(241, 100%, 89%);
     --clr-neutral-Dark-Gray-Blue: hsl(224, 30%, 27%);
 
@@ -57,3 +63,143 @@
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
   }
+
+body {
+    font-family: var(--ff-main);
+    background-color: var(--clr-neutral-Pale-Blue);
+}
+
+
+.flex-center {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    border-radius: 1.5rem;
+    background-color: var(--clr-neutral-white);
+    width: 635px;
+}
+
+/* PERSONAL RESULT */
+
+.personal-result {
+    width: 50%;
+    background: linear-gradient(var(--clr-gradient-Light-Slate-Blue), var(--clr-gradient-Light-Royal-Blue));
+    border-radius: 1.5rem;
+    padding: 2rem 2.625rem;
+    text-align: center;
+}
+
+.personal-result__title {
+    font-size: 1.3rem;
+    color: var(--clr-neutral-Light-Lavender);
+}
+
+.personal-result__score {
+    background: linear-gradient(var(--clr-gradient-Violet-Blue), var(--clr-gradient-Persian-Blue));
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem auto;
+}
+.personal-result__score__number {
+    color: var(--clr-neutral-white);
+    font-size: 3.5rem;
+    font-weight: var(--fw-bold);
+}
+.personal-result__score__max {
+    color: var(--clr-neutral-Light-Gray);
+    margin-top: -1rem;
+}
+.personal-result__type {
+    color: var(--clr-neutral-white);
+    font-size: 1.8rem;
+}
+.personal-result__description {
+    color: var(--clr-neutral-Light-Lavender);
+    margin: 1rem 0;
+}
+
+
+/* SUMMARY */
+
+.summary {
+    padding: 1.875rem;
+}
+.summary__title {
+    color: var(--clr-neutral-Dark-Gray-Blue);
+}
+
+.summary__categories__reaction,
+.summary__categories__memory,
+.summary__categories__verbal,
+.summary__categories__visual {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .7rem;
+    width: 250px;
+    border-radius: 1rem;
+    margin: 1rem 0;
+}
+
+.flex-group {
+    display: flex;
+    gap: .5rem;
+}
+
+.summary__categories__reaction {
+    background-color: var(--clr-primary-transparent-Light-Red);
+}
+.summary__categories__memory {
+    background-color: var(--clr-primary-transparent-Orangey-Yellow);
+}
+.summary__categories__verbal {
+    background-color: var(--clr-primary-transparent-Green-Teal);
+}
+.summary__categories__visual {
+    background-color: var(--clr-primary-transparent-Cobalt-Blue);
+}
+
+.summary__categories__reaction__title {
+    color: var(--clr-primary-Light-Red);
+}
+.summary__categories__memory__title {
+    color: var(--clr-primary-Orangey-Yellow);
+}
+.summary__categories__verbal__title {
+    color: var(--clr-primary-Green-Teal);
+}
+.summary__categories__visual__title {
+    color: var(--clr-primary-Cobalt-Blue);
+}
+
+.summary__categories__score {
+    color: var(--clr-neutral-Dark-Gray-Blue);
+    font-weight: var(--fw-extraBold);
+}
+.summary__categories__score-max {
+    color: var(--clr-neutral-Light-Gray);
+    font-weight: var(--fw-bold);
+}
+
+.button {
+    border: none;
+    background-color: var(--clr-neutral-Dark-Gray-Blue);
+    color: var(--clr-neutral-Pale-Blue);
+    cursor: pointer;
+    border-radius: 1.5rem;
+    padding: .7rem;
+    margin: 1rem 0;
+    width: 250px;
+}
+.button:hover {
+    background: linear-gradient(var(--clr-gradient-Light-Slate-Blue), var(--clr-gradient-Light-Royal-Blue));
+}
