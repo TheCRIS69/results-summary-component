@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+
+/* COLORS */
+
+    /* SUMMARY */
+    --clr-primary-Light-Red: hsl(0, 100%, 67%);
+    --clr-primary-Orangey-Yellow: hsl(39, 100%, 56%);
+    --clr-primary-Green-Teal: hsl(166, 100%, 37%);
+    --clr-primary-Cobalt-Blue: hsl(234, 85%, 45%);
+
+    /* BACKGROUND */ 
+    --clr-gradient-Light-Slate-Blue: hsl(252, 100%, 67%); 
+    --clr-gradient-Light-Royal-Blue: hsl(241, 81%, 54%);
+
+    /* CIRCLE */
+    --clr-gradient-Violet-Blue: hsla(256, 72%, 46%, 1);
+    --clr-gradient-Persian-Blue: hsla(241, 72%, 46%, 0);
+
+    /* OTHERS */
+    --clr-neutral-white: hsl(0, 0%, 100%);
+    --clr-neutral-Pale-Blue: hsl(221, 100%, 96%);
+    --clr-neutral-Light-Lavender: hsl(241, 100%, 89%);
+    --clr-neutral-Dark-Gray-Blue: hsl(224, 30%, 27%);
+
+/* FONT */
+
+    --ff-main: 'Hanken Grotesk', sans-serif;
+
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fw-extraBold: 800;
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
