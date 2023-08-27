@@ -87,7 +87,6 @@ body {
 /* PERSONAL RESULT */
 
 .personal-result {
-    width: 50%;
     background: linear-gradient(var(--clr-gradient-Light-Slate-Blue), var(--clr-gradient-Light-Royal-Blue));
     border-radius: 1.5rem;
     padding: 2rem 2.625rem;
@@ -198,8 +197,26 @@ body {
     border-radius: 1.5rem;
     padding: .7rem;
     margin: 1rem 0;
-    width: 250px;
+    width: 100%;
 }
 .button:hover {
     background: linear-gradient(var(--clr-gradient-Light-Slate-Blue), var(--clr-gradient-Light-Royal-Blue));
+}
+
+@media (max-width: 450px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .personal-result {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .summary__categories__reaction,
+    .summary__categories__memory,
+    .summary__categories__verbal,
+    .summary__categories__visual {
+        width: 100%;
+    }
 }
