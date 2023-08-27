@@ -89,7 +89,7 @@ body {
 .personal-result {
     background: linear-gradient(var(--clr-gradient-Light-Slate-Blue), var(--clr-gradient-Light-Royal-Blue));
     border-radius: 1.5rem;
-    padding: 2rem 2.625rem;
+    padding: 2rem 2.8rem;
     text-align: center;
 }
 
@@ -111,11 +111,12 @@ body {
 .personal-result__score__number {
     color: var(--clr-neutral-white);
     font-size: 3.5rem;
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-extraBold);
 }
 .personal-result__score__max {
     color: var(--clr-neutral-Light-Gray);
     margin-top: -1rem;
+    font-weight: var(--fw-bold);
 }
 .personal-result__type {
     color: var(--clr-neutral-white);
@@ -134,6 +135,7 @@ body {
 }
 .summary__title {
     color: var(--clr-neutral-Dark-Gray-Blue);
+    font-size: 1.3rem;
 }
 
 .summary__categories__reaction,
